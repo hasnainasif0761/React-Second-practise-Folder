@@ -1,10 +1,18 @@
 import React from 'react'
+import User from './User'
 
 const App = () => {
+
+    const handlepop = (name) =>{
+      alert(name);
+    }
+
+
   return (
     <div>
-      <input type="text" placeholder='Enter your name' />
-      <button>Press Btn Focus Input</button>
+      <User user={handlepop} uname={'Huzaifa'} />
+      <User user={handlepop} uname={'Shaib'} />
+      <User user={handlepop} uname={'Bheem'} />
     </div>
   )
 }
